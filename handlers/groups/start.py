@@ -18,7 +18,7 @@ async def start(message: types.Message):
 @dp.message_handler(ChatTypeFilter(), content_types=types.ContentType.NEW_CHAT_MEMBERS)
 async def new_chat_member(message: types.Message):
     if message.new_chat_members[0].is_bot:
-        await message.bot.ban_chat_member(chat_id=-1001869907239, user_id=message.new_chat_members[0].id)
+        await message.bot.ban_chat_member(chat_id=-1554079401, user_id=message.new_chat_members[0].id)
         print(message.new_chat_members[0].first_name, 'nomli bot guruhdan chiqarb yuborldi !!!')
 
     else:
